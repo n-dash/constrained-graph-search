@@ -25,7 +25,7 @@ The program is based on Dijkstra’s search, most commonly used algorithm for co
 - Baseline route: a ride-only route for comparison.
 - Optimized mixed-mode route: a route combining walking and transit, respecting the time-walking constraint.
 
-This design demonstrates how graph-based algorithms can be applied to real-world transportation problems with multiple edge types, constraints, and user preferences. The project is written in Racket and applies the concepts of graphs, search, encapsulation, abstract functions, interactive world programs, and systematic software design. It was designed during the <a href="https://www.letsbuidl.com" target="_blank">BU1LD program</a> under the mentorship of Charlie Chen and Kieran Stewart.
+This design demonstrates how graph-based algorithms can be applied to real-world transportation problems with multiple edge types, constraints, and user preferences. The project is written in Racket and applies the concepts of graphs, search, encapsulation, abstract functions, interactive world programs, and systematic software design. It was designed during the <a href="https://www.letsbuidl.com" target="_blank">BU1DL program</a> under the mentorship of <a href="https://www.linkedin.com/in/charlieshuchen/" target="_blank">Charlie Chen</a> and Kieran Stewart.
 
 ## Demonstration
 
@@ -66,6 +66,6 @@ The mixed-mode model (modified Dijkstra’s search) will suggest different pathw
 
 ## Future Improvements
 
-1. Demonstrate more clearly the exact waiting time that is replaced by walking. Currently, the weights for public transit segments combine both waiting and riding time for simplicity, which does not allow the precise amount of time saved by walking instead of waiting to be calculated.
-2. Create a more polished rendering of the model outputs, including a visualization of the graph with the optimal pathways highlighted.
-3. Expand the transportation mode options, as currently only walking and public transit are considered.
+1. Create a user-friendly interface for specifying the walk limit and graph they want to use.
+2. Calculate the exact waiting time that is replaced by walking. Currently, the weights for public transit segments combine both waiting and riding time for simplicity, which does not allow to determine the precise amount of time saved by walking instead of waiting.
+3. Create a more polished rendering of the model outputs, including a visualization of the graph with the optimal pathways highlighted.
